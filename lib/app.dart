@@ -9,16 +9,16 @@ import 'core/theme/app_theme.dart';
 
 final RouteObserver<ModalRoute<void>> routeObserver = RouteObserver<ModalRoute<void>>();
 
-class BDCallingTaskApp extends StatefulWidget {
-  const BDCallingTaskApp({super.key});
+class MovieStreamApp extends StatefulWidget {
+  const MovieStreamApp({super.key});
 
   static GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
 
   @override
-  State<BDCallingTaskApp> createState() => _BDCallingTaskAppState();
+  State<MovieStreamApp> createState() => _MovieStreamAppState();
 }
 
-class _BDCallingTaskAppState extends State<BDCallingTaskApp> {
+class _MovieStreamAppState extends State<MovieStreamApp> {
   @override
   Widget build(BuildContext context) {
     SystemChrome.setSystemUIOverlayStyle(
@@ -31,7 +31,7 @@ class _BDCallingTaskAppState extends State<BDCallingTaskApp> {
       designSize: const Size(360, 640),
       builder: (context, child) {
         return GetMaterialApp(
-          navigatorKey: BDCallingTaskApp.navigatorKey,
+          navigatorKey: MovieStreamApp.navigatorKey,
           debugShowCheckedModeBanner: false,
           defaultTransition: Transition.fadeIn,
           transitionDuration: const Duration(milliseconds: 200),
